@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Espresso | Premium Coffee Experience</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/coffee logo.webp" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top">
+    <!-- Loader  -->
+    <div class="loader">
+      <div class="loader-inner">
+        <img src="./assets/logo.webp" alt="Espresso Logo" class="loader-logo" />
+
+        <h2 class="loader-title">ESPRESSO</h2>
+
+        <div class="loader-progress-wrapper">
+          <div class="loader-progress"></div>
+        </div>
+
+        <span class="loader-percent">0%</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-green side-spacing reveal reveal-up">
+      <nav>
+        <div class="logo">
+          <a href="#top">
+            <img src="./assets/coffee logo.webp" alt="Espresso Coffee Logo" />
+          </a>
+        </div>
+
+        <ul class="navlist" id="navList">
+          <li>
+            <a href="#products" class="links peach-clr nav-product">
+              Product
+            </a>
+          </li>
+
+          <li>
+            <a href="#products" class="links peach-clr nav-offers">
+              Special Offers
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="links peach-clr nav-process"> The Process </a>
+          </li>
+
+          <li>
+            <a href="#" class="links peach-clr nav-packing"> Packing </a>
+          </li>
+
+          <li>
+            <a href="#about" class="links peach-clr"> About </a>
+          </li>
+        </ul>
+
+        <div class="action-list">
+          <a href="#" class="nav-btn">Order Now</a>
+
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          type="button"
+          aria-label="Open menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero-section bg-green side-spacing">
+        <h1 class="peach-clr reveal reveal-up">Espresso Yourself</h1>
+
+        <div class="hero-img reveal reveal-scale">
+          <img src="./assets/cold coffee.webp" alt="Cold Coffee" />
+        </div>
+
+        <div class="hero-content">
+          <p class="peach-clr reveal reveal-left">
+            Crafted premium coffee experience blending rich flavors, elegant
+            design, smooth interactions for every coffee lover seeking warmth,
+            comfort, and unforgettable moments.
+          </p>
+
+          <div class="social-list reveal reveal-right">
+            <a href="#" class="icons-link bg-peach" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="icons-link bg-peach" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#" class="icons-link bg-peach" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="icons-link bg-peach" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="headline reveal reveal-up">
+          <div class="headline-content">
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Espresso</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Capucinno</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Mocha</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Lattes</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Cold Brew</h4>
+          </div>
+
+          <div class="headline-content" aria-hidden="true">
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Espresso</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Capucinno</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Mocha</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Lattes</h4>
+
+            <img src="./assets/headline icon.webp" alt="" />
+            <h4>Cold Brew</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Coffee -->
+      <section
+        id="products"
+        class="working-section bg-peach side-spacing coffee-section"
+      >
+        <div class="hero-content coffee-intro">
+          <div class="img-part">
+            <img src="./assets/coffee beans.webp" alt="Coffee Beans" />
+          </div>
+
+          <p class="green-clr">
+            Every cup tells a story of passion, handcrafted perfection, aromatic
+            beans, cozy moments, and unforgettable flavors brewed with genuine
+            love daily.
+          </p>
+        </div>
+
+        <h2 class="green-clr">Our Coffee</h2>
+
+        <div class="card-container" id="first-container">
+          <!-- Latte -->
+          <div
+            class="card"
+            data-id="1"
+            data-name="Latte"
+            data-price="8.99"
+            data-image="./assets/latte.webp"
+            data-type="Latte"
+            data-offer="true"
+          >
+            <img
+              src="./assets/latte.webp"
+              alt="Latte Coffee"
+              class="card-img"
+            />
+
+            <span class="offer-badge">SPECIAL OFFER</span>
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Mocha -->
+          <div
+            class="card"
+            data-id="2"
+            data-name="Mocha"
+            data-price="9.49"
+            data-image="./assets/mocha.webp"
+            data-type="Mocha"
+          >
+            <img
+              src="./assets/mocha.webp"
+              alt="Mocha Coffee"
+              class="card-img"
+            />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Affogato -->
+          <div
+            class="card"
+            data-id="3"
+            data-name="Affogato"
+            data-price="10.99"
+            data-image="./assets/affogato.webp"
+            data-type="Affogato"
+          >
+            <img
+              src="./assets/affogato.webp"
+              alt="Affogato Coffee"
+              class="card-img"
+            />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="second-container">
+          <!-- Cappuccino -->
+          <div
+            class="card"
+            data-id="4"
+            data-name="Capuccino"
+            data-price="8.49"
+            data-image="./assets/capuccino.webp"
+            data-type="Capucinno"
+          >
+            <img
+              src="./assets/capuccino.webp"
+              alt="Cappuccino"
+              class="card-img"
+            />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Americano -->
+          <div
+            class="card"
+            data-id="5"
+            data-name="Americano"
+            data-price="7.99"
+            data-image="./assets/americano.webp"
+            data-type="Americano"
+            data-offer="true"
+          >
+            <img
+              src="./assets/americano.webp"
+              alt="Americano"
+              class="card-img"
+            />
+
+            <span class="offer-badge">SPECIAL OFFER</span>
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Flat White -->
+          <div
+            class="card"
+            data-id="6"
+            data-name="Flat White"
+            data-price="9.29"
+            data-image="./assets/flat white.webp"
+            data-type="Flat White"
+          >
+            <img
+              src="./assets/flat white.webp"
+              alt="Flat White"
+              class="card-img"
+            />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+        </div>
+
+        <div class="card-container" id="third-container">
+          <!-- Frappe -->
+          <div
+            class="card"
+            data-id="7"
+            data-name="Frappe"
+            data-price="10.49"
+            data-image="./assets/frappe.webp"
+            data-type="Frappe"
+          >
+            <img src="./assets/frappe.webp" alt="Frappe" class="card-img" />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Cartedo -->
+          <div
+            class="card"
+            data-id="8"
+            data-name="Cartedo"
+            data-price="8.79"
+            data-image="./assets/cartedo.webp"
+            data-type="Cartedo"
+            data-offer="true"
+          >
+            <img src="./assets/cartedo.webp" alt="Cartedo" class="card-img" />
+
+            <span class="offer-badge">SPECIAL OFFER</span>
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+
+          <!-- Espresso -->
+          <div
+            class="card"
+            data-id="9"
+            data-name="Espresso"
+            data-price="6.99"
+            data-image="./assets/espresso.webp"
+            data-type="Espresso"
+          >
+            <img src="./assets/espresso.webp" alt="Espresso" class="card-img" />
+
+            <a href="#" class="action-btn placement add-cart">↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Coffee -->
+      <section class="working-section bg-green side-spacing">
+        <div class="hero-content best-line" data-type="min-padding">
+          <h2 class="peach-clr reveal reveal-left">Our Arabica Beans And</h2>
+
+          <div class="img-con reveal reveal-right">
+            <img src="./assets/coffee plant.webp" alt="Coffee Plant" />
+          </div>
+        </div>
+
+        <div class="hero-content best-line" data-type="min-padding">
+          <div class="img-con reveal reveal-left">
+            <img src="./assets/coffee bag.webp" alt="Coffee Bag" />
+          </div>
+
+          <h2 class="peach-clr reveal reveal-right">Freshly Ground Spices</h2>
+        </div>
+
+        <div class="hero-content best-line" data-type="min-padding">
+          <h2 class="peach-clr reveal reveal-left">To Achieve Rich Coffee</h2>
+
+          <div class="img-con reveal reveal-right">
+            <img src="./assets/coffee.webp" alt="Fresh Coffee" />
+          </div>
+        </div>
+
+        <video class="reveal reveal-scale" autoplay loop muted>
+          <source src="./assets/coffee making.mp4" />
+        </video>
+      </section>
+
+      <!-- Our Roasting -->
+      <section class="working-section bg-green side-spacing roasting-section">
+        <h2 class="peach-clr start">Our Roasting</h2>
+
+        <ul class="roasting-containet">
+          <li class="roasting-content listing reveal reveal-up">
+            <h3 class="peach-clr">Light Roasting</h3>
+
+            <a href="#" class="action-btn">↗</a>
+
+            <div class="roasting-img">
+              <img src="./assets/light roast.webp" alt="Light Roast" />
+            </div>
+          </li>
+
+          <li class="roasting-content listing reveal reveal-up">
+            <h3 class="peach-clr">Medium Roasting</h3>
+
+            <a href="#" class="action-btn">↗</a>
+
+            <div class="roasting-img">
+              <img src="./assets/medium roast.webp" alt="Medium Roast" />
+            </div>
+          </li>
+
+          <li class="roasting-content listing reveal reveal-up">
+            <h3 class="peach-clr">French Roasting</h3>
+
+            <a href="#" class="action-btn">↗</a>
+
+            <div class="roasting-img">
+              <img src="./assets/french roast.webp" alt="French Roast" />
+            </div>
+          </li>
+
+          <li class="roasting-content listing reveal reveal-up">
+            <h3 class="peach-clr">Dark Roasting</h3>
+
+            <a href="#" class="action-btn">↗</a>
+
+            <div class="roasting-img">
+              <img src="./assets/dark roast.webp" alt="Dark Roast" />
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Coffee Modal -->
+      <div class="coffee-modal">
+        <div class="coffee-modal-card">
+          <button class="modal-close" type="button">&times;</button>
+
+          <div class="modal-image">
+            <img src="" alt="Coffee Image" id="modalImg" />
+          </div>
+
+          <div class="modal-content">
+            <span class="modal-tag">Premium Coffee</span>
+
+            <h2 id="modalTitle">Coffee Name</h2>
+
+            <p id="modalDescription">Coffee Description</p>
+
+            <div class="modal-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+
+              <span>(4.8)</span>
+            </div>
+
+            <div class="modal-bottom">
+              <h3 id="modalPrice">$12.99</h3>
+
+              <button class="modal-btn add-to-cart-modal" type="button">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <aside class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+
+        <button class="close-cart" type="button">&times;</button>
+      </div>
+
+      <div class="cart-items"></div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+
+        <a href="#" class="checkout-btn">Checkout</a>
+      </div>
+    </aside>
+
+    <div class="cart-overlay"></div>
+
+    <!-- About -->
+    <section class="about-section bg-green side-spacing" id="about">
+      <div class="about-content">
+        <div class="about-text reveal reveal-left">
+          <span class="about-tag">OUR STORY</span>
+
+          <h2 class="peach-clr">
+            More Than Coffee.
+            <span>It's An Experience.</span>
+          </h2>
+
+          <p class="peach-clr">
+            At Espresso, we believe every cup deserves time, passion, and
+            perfection. From carefully selected Arabica beans to the final pour,
+            every step is crafted to create a coffee experience worth
+            remembering.
+          </p>
+
+          <p class="peach-clr">
+            We combine traditional coffee craftsmanship with a modern touch,
+            creating rich flavors, smooth textures, and moments that bring
+            people together.
+          </p>
+
+          <a href="#products" class="action-btn about-btn">
+            Explore Our Coffee ↗
+          </a>
+        </div>
+
+        <div class="about-image reveal reveal-right">
+          <img src="./assets/coffee plant.webp" alt="Espresso Coffee Beans" />
+
+          <div class="about-badge reveal reveal-scale">
+            <strong>100%</strong>
+            <span>CRAFTED<br />WITH PASSION</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-peach side-spacing">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand footer-reveal">
+          <div class="footer-logo">
+            <img src="./assets/coffee logo.webp" alt="Espresso Coffee Logo" />
+          </div>
+
+          <h2>ESPRESSO</h2>
+
+          <p>
+            Crafted with passion. Served with warmth. Every cup tells a story.
+          </p>
+
+          <a href="#products" class="footer-cta">
+            Explore Coffee <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-col footer-reveal">
+          <h5>Explore</h5>
+
+          <ul class="footer-links">
+            <li><a href="#products">Our Coffee</a></li>
+            <li><a href="#products">Special Offers</a></li>
+            <li><a href="#">The Process</a></li>
+            <li><a href="#">Packing</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col footer-reveal">
+          <h5>Services</h5>
+
+          <ul class="footer-links">
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Order Ahead</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Find Location</a></li>
+            <li><a href="#">Our Story</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter footer-reveal">
+          <h5>Stay Connected</h5>
+
+          <p>
+            Get coffee updates, special offers and fresh news straight to your
+            inbox.
+          </p>
+
+          <form class="footer-form">
+            <input
+              type="email"
+              placeholder="Your email address..."
+              autocomplete="off"
+              required
+            />
+
+            <button type="submit" aria-label="Subscribe">↗</button>
+          </form>
+
+          <div class="footer-socials">
+            <a href="#" class="icons-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" class="icons-link" aria-label="Twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="#" class="icons-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" class="icons-link" aria-label="Pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom footer-reveal">
+        <span>© 2026 Espresso Coffee. All rights reserved.</span>
+        <span>Crafted with ☕ & passion</span>
+      </div>
+    </footer>
+
+    <!-- UI Elements -->
+    <div class="cursor">
+      <span>VIEW</span>
+    </div>
+
+    <div class="toast-container"></div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal">
+      <div class="checkout-card">
+        <button class="close-checkout" type="button">&times;</button>
+
+        <h2>Checkout</h2>
+
+        <div class="checkout-summary">
+          <div class="summary-row">
+            <span>Total Items</span>
+            <strong id="checkoutItems">0</strong>
+          </div>
+
+          <div class="summary-row">
+            <span>Total Price</span>
+            <strong id="checkoutPrice">$0.00</strong>
+          </div>
+        </div>
+
+        <form class="checkout-form">
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Email Address" required />
+
+          <button type="submit" class="place-order-btn">Place Order</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
